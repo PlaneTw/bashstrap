@@ -1,0 +1,10 @@
+alias ls="ls -G"
+alias ll="ls -al"
+
+alias gs="git status"
+alias gc="git commit -m"
+
+alias ~="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
