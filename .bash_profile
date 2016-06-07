@@ -15,4 +15,4 @@ fi
 [ -f $(brew --prefix nvm)/nvm.sh ] && source $(brew --prefix nvm)/nvm.sh
 
 #
-export PS1="[\u@ \[\033[1;32m\]\w\[\033[0m\]\[\033[1;36m\]$(__git_ps1)\[\033[0m\]]$"
+export PS1="[\u@ \[\033[1;32m\]\w\[\033[0m\]\[\033[1;36m\]\$(__git_ps1)\[\033[0m\]]$"
