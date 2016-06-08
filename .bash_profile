@@ -12,7 +12,10 @@ if [ -f ${BASH_COMPLETION}git-prompt.sh ]; then
 fi
 
 # NVM
-[ -f $(brew --prefix nvm)/nvm.sh ] && source $(brew --prefix nvm)/nvm.sh
+if [ -f $(brew --prefix nvm)/nvm.sh ]; then
+    export NVM_DIR="$HOME/.nvm"
+    source $(brew --prefix nvm)/nvm.sh
+fi
 
 #
 export PS1="[\u@ \[\033[1;32m\]\w\[\033[0m\]\[\033[1;36m\]\$(__git_ps1)\[\033[0m\]]$"
