@@ -9,6 +9,7 @@ source ~/.bash_alias
 # Git prompt
 if [ -f ${BASH_COMPLETION}git-prompt.sh ]; then
     source ${BASH_COMPLETION}git-prompt.sh
+    GIT_PS1_SHOWDIRTYSTATE=true
 fi
 
 # NVM
